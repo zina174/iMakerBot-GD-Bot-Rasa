@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: contact_customer_service
+  examples: |
+    - I want the phone number for customr service department
+    - I want the phone number for your customer service department
+    - I want the phone number for your customer advisor

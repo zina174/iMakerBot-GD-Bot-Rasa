@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: contact_human_agent
+  examples: |
+    - Can I speak to an advisor?
+    - Put me through to someone
+    - Pls connect

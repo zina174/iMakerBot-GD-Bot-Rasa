@@ -1,0 +1,13 @@
+version: "2.0"
+
+rules:
+
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: action_respond_to_out_of_scope
+
+- rule: Ask the user to rephrase in case of low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: action_respond_to_fallback

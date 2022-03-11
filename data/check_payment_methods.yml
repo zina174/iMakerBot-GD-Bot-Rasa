@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: check_payment_methods
+  examples: |
+    - ask an agent where to see their payment options, please
+    - where can i view your payment methods?
+    - can you tell me if I can make a payment with [Master Card](card)?

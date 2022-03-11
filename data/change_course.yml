@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: change_course
+  examples: |
+    - I'm subscribed in a course, can I change my choice?
+    - I did a registration in a course, how do I change it ?
+    - I purchased a course, how do i change my purchase?

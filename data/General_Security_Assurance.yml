@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: General_Security_Assurance
+  examples: |
+    - are now you totally safe on hackers?;
+    - are exactly you eating safe on hackers?;
+    - are he you in safe on hackers?

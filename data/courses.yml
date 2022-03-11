@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: courses
+  examples: |
+    - Can you teach me information technology
+    - I want to learn computer science
+    - I need to to help me choose course

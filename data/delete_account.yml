@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: delete_account
+  examples: |
+    - can I close my account?
+    - I don't want my account, can you delete it?
+    - how do i close my online account?

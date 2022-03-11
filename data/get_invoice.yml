@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: get_invoice
+  examples: |
+    - i wanna know something about getting some bills
+    - i want to get an invoice, tell me how I can do it
+    - can u ask an agent for information about obtaining an innvoice

@@ -1,0 +1,467 @@
+version: "2.0"
+
+stories:
+- story: path_1
+  steps:
+  - intent: English
+  - action: utter_main
+  - intent: SERVICES
+  - action: utter_ourservices
+  - intent: CHATBOTS
+  - action: utter_chatbots
+  - action: utter_replay_main
+- story: path_2
+  steps:
+  - intent: English
+  - action: utter_main
+  - intent: SERVICES
+  - action: utter_ourservices
+  - intent: Networks
+  - action: utter_networks
+  - action: utter_replay_main
+- story: path_3
+  steps:
+  - intent: English
+  - action: utter_main
+  - intent: SERVICES
+  - action: utter_ourservices
+  - intent: DEVELOPMENT
+  - action: utter_development
+  - action: utter_replay_main  
+- story: path_4
+  steps:
+  - intent: English
+  - action: utter_main
+  - intent: SERVICES
+  - action: utter_ourservices
+  - intent: TRAINING
+  - action: utter_training
+  - action: utter_replay_main  
+
+- story: path_5
+  steps:
+  - intent: French
+  - action: utter_main_French
+  - intent: SERVICES
+  - action: utter_ourservices_French
+  - intent: CHATBOTS
+  - action: utter_chatbots_French
+  - action: utter_replay_main_french  
+- story: path_6
+  steps:
+  - intent: French
+  - action: utter_main_French
+  - intent: SERVICES
+  - action: utter_ourservices_French
+  - intent: Networks
+  - action: utter_networks_French
+  - action: utter_replay_main_french  
+- story: path_7
+  steps:
+  - intent: French
+  - action: utter_main_French
+  - intent: SERVICES
+  - action: utter_ourservices_French
+  - intent: DEVELOPMENT
+  - action: utter_development_French
+  - action: utter_replay_main_french    
+- story: path_8
+  steps:
+  - intent: French
+  - action: utter_main_French
+  - intent: SERVICES
+  - action: utter_ourservices_French
+  - intent: TRAINING
+  - action: utter_training_French
+  - action: utter_replay_main_french    
+  
+- story: path_9
+  steps:
+  - intent: Arabic
+  - action: utter_main_Arabic
+  - intent: SERVICES
+  - action: utter_ourservices_Arabic
+  - intent: CHATBOTS
+  - action: utter_chatbots_Arabic
+  - action: utter_replay_main_arabic
+- story: path_10
+  steps:
+  - intent: Arabic
+  - action: utter_main_Arabic
+  - intent: SERVICES
+  - action: utter_ourservices_Arabic
+  - intent: Networks
+  - action: utter_networks_Arabic
+  - action: utter_replay_main_arabic  
+- story: path_11
+  steps:
+  - intent: Arabic
+  - action: utter_main_Arabic
+  - intent: SERVICES
+  - action: utter_ourservices_Arabic
+  - intent: DEVELOPMENT
+  - action: utter_development_Arabic
+  - action: utter_replay_main_arabic
+- story: path_12
+  steps:
+  - intent: Arabic
+  - action: utter_main_Arabic
+  - intent: SERVICES
+  - action: utter_ourservices_Arabic
+  - intent: TRAINING
+  - action: utter_training_Arabic
+  - action: utter_replay_main_arabic  
+
+
+
+- story: path_13
+  steps:
+  - intent: Arabic
+  - action: utter_main_Arabic
+  - intent: REFERENCES
+  - action: utter_references_Arabic
+  - action: utter_replay_main_arabic  
+- story: path_14
+  steps:
+  - intent: Arabic
+  - action: utter_main_Arabic
+  - intent: CONTACT
+  - action: utter_contact_Arabic
+  - action: utter_replay_main_arabic  
+- story: path_15
+  steps:
+  - intent: Arabic
+  - action: utter_main_Arabic
+  - intent: BLOG
+  - action: utter_blog_Arabic
+  - action: utter_replay_main_arabic  
+
+
+- story: path_16
+  steps:
+  - intent: French
+  - action: utter_main_French
+  - intent: REFERENCES
+  - action: utter_references_French
+  - action: utter_replay_main_french
+- story: path_17
+  steps:
+  - intent: French
+  - action: utter_main_French
+  - intent: CONTACT
+  - action: utter_contact_French
+  - action: utter_replay_main_french
+- story: path_18
+  steps:
+  - intent: French
+  - action: utter_main_French
+  - intent: BLOG
+  - action: utter_blog_French
+  - action: utter_replay_main_french  
+
+
+- story: path_19
+  steps:
+  - intent: English
+  - action: utter_main
+  - intent: REFERENCES
+  - action: utter_references
+  - action: utter_replay_main
+- story: path_20
+  steps:
+  - intent: English
+  - action: utter_main
+  - intent: CONTACT
+  - action: utter_contact
+  - action: utter_replay_main
+- story: path_21
+  steps:
+  - intent: English
+  - action: utter_main
+  - intent: BLOG
+  - action: utter_blog
+  - action: utter_replay_main
+
+
+
+
+
+
+
+
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  
+- story: long feedback path
+  steps:
+  - intent: goodbye
+  - action: utter_greetfeedback
+  - action: utter_menu
+  - intent: okay
+  - action: utter_thanks
+  - action: form_get_rating
+  - active_loop: form_get_rating
+  - active_loop: null
+  - action: form_get_influence
+  - active_loop: form_get_influence
+  - active_loop: null
+  - action: action_receive_ranking
+  - action: form_get_support_feedback
+  - active_loop: form_get_support_feedback
+  - active_loop: null
+  - action: action_receive_ranking
+  - action: utter_pre_finish
+  - action: utter_finish
+
+- story: short_feedback path
+  steps:
+  - intent: goodbye
+  - action: utter_greetfeedback
+  - action: utter_menu
+  - intent: later
+  - action: form_get_rating_quick
+  - active_loop: form_get_rating_quick
+  - active_loop: null
+  - action: action_receive_ranking
+  - action: utter_pre_finish
+  - action: utter_finish
+
+
+  
+- story: Multilingual_SERVICES
+  steps:
+  - intent: SERVICES
+  - action: action_respond_to_multilingual_question
+
+- story: Multilingual_DEVELOPMENT
+  steps:
+  - intent: DEVELOPMENT
+  - action: action_respond_to_multilingual_question
+
+- story: Multilingual_CHATBOTS
+  steps:
+  - intent: CHATBOTS
+  - action: action_respond_to_multilingual_question
+
+- story: Multilingual_TRAINING
+  steps:
+  - intent: TRAINING
+  - action: action_respond_to_multilingual_question
+
+- story: Multilingual_NETWORKS
+  steps:
+  - intent: Networks
+  - action: action_respond_to_multilingual_question
+  
+
+- story: Multilingual_REFERENCES
+  steps:
+  - intent: REFERENCES
+  - action: action_respond_to_multilingual_question
+
+- story: Multilingual_CONTACT
+  steps:
+  - intent: CONTACT
+  - action: action_respond_to_multilingual_question
+
+- story: Multilingual_BLOG
+  steps:
+  - intent: BLOG
+  - action: action_respond_to_multilingual_question
+
+
+
+- story: general_Agent_Capabilities
+  steps:
+  - intent: General_Agent_Capabilities
+  - action: action_respond_to_general_Agent_Capabilities
+
+- story: Session_commencement
+  steps:
+  - intent: session_commencement
+  - action: action_respond_to_Session_commencement
+
+- story: newsletterSubscription
+  steps:
+  - intent: newsletter_subscription
+  - action: action_newslettersubscription
+
+- story: newsletterlink
+  steps:
+  - intent: newsletter_subscription_link
+  - action: action_newslettersubscription_to_page
+
+- story: createAccount
+  steps:
+  - intent: create_account
+  - action: action_create_account_by_utter
+
+- story: createAccountlink
+  steps:
+  - intent: create_account_link
+  - action: action_create_account
+
+- story: registration_problems
+  steps:
+  - intent: registration_problems
+  - action: action_respond_to_registration_problems
+
+- story: switch_account
+  steps:
+  - intent: switch_account
+  - action: action_respond_to_switch_account
+
+- story: contact_customer_service
+  steps:
+  - intent: contact_customer_service
+  - action: action_respond_to_contact_customer_service
+
+- story: contact_human_agent
+  steps:
+  - intent: contact_human_agent
+  - action: action_respond_to_contact_human_agent
+
+- story: course_period
+  steps:
+  - intent: course_period
+  - action: action_respond_to_course_period
+
+- story: check_invoices
+  steps:
+  - intent: check_invoices
+  - action: action_respond_to_check_invoices
+
+- story: get_invoice
+  steps:
+  - intent: get_invoice
+  - action: action_respond_to_get_invoice
+
+- story: general_Security_Assurance
+  steps:
+  - intent: General_Security_Assurance
+  - action: action_respond_to_general_Security_Assurance
+
+- story: general_Human_or_Bot
+  steps:
+  - intent: General_Human_or_Bot
+  - action: action_respond_to_general_Human_or_Bot
+
+- story: delete_account
+  steps:
+  - intent: delete_account
+  - action: action_respond_to_delete_account
+
+- story: edit_account
+  steps:
+  - intent: edit_account
+  - action: action_respond_to_edit_account
+
+- story: recover_password
+  steps:
+  - intent: recover_password
+  - action: action_respond_to_recover_password
+
+- story: check_cancellation_fee
+  steps:
+  - intent: check_cancellation_fee
+  - action: action_respond_to_check_cancellation_fee
+
+- story: cancel_course_subscription
+  steps:
+  - intent: cancel_course_subscription
+  - action: action_respond_to_cancel_course_subscription
+
+- story: change_course
+  steps:
+  - intent: change_course
+  - action: action_respond_to_change_course
+
+- story: payment_issue
+  steps:
+  - intent: payment_issue
+  - action: action_respond_to_payment_issue
+
+- story: get_refund
+  steps:
+  - intent: get_refund
+  - action: action_respond_to_get_refund
+
+- story: general_About_You
+  steps:
+  - intent: General_About_You
+  - action: action_respond_to_general_About_You
+
+- story: skills_needed_for_employee
+  steps:
+  - intent: skills_needed_for_employee
+  - action: action_respond_to_skills_needed_for_employee
+
+- story: prepare_for_interview
+  steps:
+  - intent: prepare_for_interview
+  - action: action_respond_to_prepare_for_interview
+
+- story: long negative feedback path
+  steps:
+  - intent: General_Negative_Feedback
+  - action: action_translate_msg_for_rating
+  - action: action_translate_express_opinion
+  - action: form_get_support_feedback
+  - active_loop: form_get_support_feedback
+  - active_loop: null
+  - action: action_receive_ranking
+
+- story: long positive feedback path
+  steps:
+  - intent: General_Positive_Feedback
+  - action: action_translate_msg_for_rating
+  - action: action_translate_express_opinion
+  - action: form_get_support_positive_feedback
+  - active_loop: form_get_support_positive_feedback
+  - active_loop: null
+  - action: action_receive_ranking
+
+- story: long complaint path
+  steps:
+  - intent: complaint
+  - action: action_translate_msg_for_rating
+  - action: action_translate_express_opinion
+  - action: form_get_support_complaint_feedback
+  - active_loop: form_get_support_complaint_feedback
+  - active_loop: null
+  - action: action_receive_ranking
+
+- story: long review path
+  steps:
+  - intent: review
+  - action: action_translate_msg_for_rating
+  - action: action_translate_express_opinion
+  - action: form_get_support_review_feedback
+  - active_loop: form_get_support_review_feedback
+  - active_loop: null
+  - action: action_receive_ranking
+
+

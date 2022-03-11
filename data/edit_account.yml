@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: edit_account
+  examples: |
+    - how can I modify the information on my profile?
+    - can u ask an agent how to make changes to my profile?
+    - I want to update the information on my profile

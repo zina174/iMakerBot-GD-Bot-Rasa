@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: payment_issue
+  examples: |
+    - how can i solve problems paying?
+    - I got an error message when I attempted to pay, but my card was charged anyway, how can I notif it?
+    - i get an error when i try to make a payment for my order, what can i do?

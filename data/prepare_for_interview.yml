@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: prepare_for_interview
+  examples: |
+    - with is continuous preparation of difficult technical concepts needed for an interview?;
+    - for is preparation lots of technical concepts needed for an actual interview?;
+    - is preparation of future technical physics concepts always needed for an interview?

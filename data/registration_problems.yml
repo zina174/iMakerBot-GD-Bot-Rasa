@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: registration_problems
+  examples: |
+    - I found problems when trying to sign up
+    - I fonud an issue signing up
+    - I found problems when trying to open a account

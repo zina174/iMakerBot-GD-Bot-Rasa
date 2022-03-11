@@ -1,0 +1,119 @@
+version: "2.0"
+
+nlu:
+- intent: SERVICES
+  examples: |
+    - [our services](company_specialisation) 
+    - [découvrez nos services](company_specialisation) 
+    - [خدماتنا](company_specialisation)    
+    - [خدمات](company_specialisation)    
+    - [your services](company_specialisation) 
+    - [services](company_specialisation) 
+    - What are your [services offered to customers?](company_specialisation)
+    - What are your [services](company_specialisation)?
+    - your online [service](company_specialisation) ? 
+    - [service](company_specialisation)
+    - somebody tell us informations
+    - tell us [accurate informations](company_specialisation)
+- intent: DEVELOPMENT
+  examples: |
+   - [Development Services](software_development)
+   - [Développement](software_development)
+   - [تطوير تطبيقات الويب والهواتف الذكية](software_development)
+   - [développement](software_development) 
+   - [dévelop](software_development) online services?
+   - [Development Services](software_development) 
+   - how does your company help the [developers](software_development)?
+   - what about [development web](software_development)?   
+   - [development](software_development)
+   - what about [development web](software_development) ?   
+   - How much does It Cost To [develop a Software](software_development) ?
+   - The device [development process](software_development) ?
+   - [programming languages](software_development)
+   - [development mobile](software_development) based language learning
+   - What [programming languages](software_development) will we learn?
+- intent: CHATBOTS
+  examples: |
+    - [Agents Conversationnels](building_chatbot)
+    - [روبوتات ذكية للدردشة](building_chatbot)
+    - [روبوت الدردشة](building_chatbot)
+    - [Chatbots](building_chatbot)
+    - [chatbot](building_chatbot)
+    - [chatbots](building_chatbot) what are they doing good folks for ?
+    - [chatbots](building_chatbot) what information are they good together for ?
+    - [chatbot](building_chatbot) what customers are they looking good for ? 
+    - tell me about building [chatbot](building_chatbot)
+    - [artificial conversation entity](building_chatbot)
+
+- intent: TRAINING
+  examples: |
+    - [Formation en ligne](courses)
+    - [دورات تدريبية على الإنترنت](courses)
+    - [course](courses)
+    - [Online Training](courses)
+    - Free Online [Courses](courses)
+    - [E-Learning](courses)       
+    - [online learning](courses)
+    - [online class](courses)    
+- intent: Networks
+  examples: | 
+    - [Networks](network_setting)
+    - [Réseaux](network_setting)
+    - [تركيب الشبكات](network_setting)
+    - [Network installation](network_setting)
+    - [network install](network_setting)
+    - [network](network_setting)
+    - [networking](network_setting)
+    - What needs to be done to the [network](network_setting) for installation requirements?
+    - What about [computer network](network_setting) ?
+    - I want to know more about [Computer Maintenance and Networking](network_setting)
+    - is your model company solving some real power computer [networking](network_setting) problems and offers solutions ?
+    - who is your company solving real computer serial [networking](network_setting) problem and offers solutions ?
+- intent: REFERENCES
+  examples: |
+    - [References](company_reference) 
+    - [مراجعنا](company_reference) 
+    - Nos [Références](company_reference) 
+    - [references](company_reference) 
+    - What are your [references](company_reference) ?
+    - what are your previous [references](company_reference) 
+    - what are possibly your [references](company_reference) ?
+    - what extent are your [references](company_reference) ?
+    - tell me something about your online [references](company_reference) ?
+    - Sara your [references](company_reference) ?
+    - what are your special [references](company_reference) ?
+    - what colors are your [references](company_reference) ?
+    - almost what are your [references](company_reference) ?
+- intent: CONTACT
+  examples: | 
+    - [Contact](communication_form)
+    - [Contactez-nous](communication_form)
+    - [تواصل معنا](communication_form)
+    - [our contacts](communication_form)
+    - [contact](communication_form)
+    - your [contact](communication_form) ?
+    - [Our contacts](communication_form)
+- intent: BLOG
+  examples: | 
+    - [Blog](company_blog) 
+    - [مدونتنا](company_blog) 
+    - [blog d'entreprise](company_blog) 
+    - [Notre Blog](company_blog) 
+    - [Our Blog](company_blog) 
+    - your [Blog](company_blog) ?
+    - [blog](company_blog)
+    - your [business blog](company_blog)
+    - what about your [Company blog](company_blog) ?
+    - [blogging](company_blog)
+  
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: create_account
+  examples: |
+    - I don't have an online account, what do I have to do to register?
+    - can you tell me if i can regisger two accounts with a single email address?
+    - I have no online account, open one, please

@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: get_refund
+  examples: |
+    - the game was postponed, help me obtain a reimbursement
+    - the game was postponed, what should I do to obtain a reimbursement?
+    - the concert was postponed, what should I do to request a reimbursement?

@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: switch_account
+  examples: |
+    - I would like to use my other online account , could you switch them, please?
+    - i want to use my other online account, can u change them?
+    - how do i change to another account?

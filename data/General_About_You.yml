@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: General_About_You
+  examples: |
+    - " introduce your self;
+    - introduce up your self;
+    - introduce well your self

@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: course_period
+  examples: |
+    - can u ask an agent how soon i can expect my course to begin
+    - ask an agent when my course will start
+    - i want to know when my courss are gonna start

@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: General_Negative_Feedback
+  examples: |
+    - everything stupid
+    - being stupid
+    - completely stupid

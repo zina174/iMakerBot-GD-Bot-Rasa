@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: General_Human_or_Bot
+  examples: |
+    - am i not talking to this a bot?;
+    - do am i crazy talking to a bot?;
+    - am i definitely talking to a science bot?

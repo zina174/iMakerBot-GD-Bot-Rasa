@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: complaint
+  examples: |
+    - ask an agent how i can make a consumer complaint for a service
+    - I want to submit a complaint, what do I have to do?
+    - I'm discontent with the service, how caj I submit a consumer complaint?

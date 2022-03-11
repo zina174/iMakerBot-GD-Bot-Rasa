@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: cancel_course_subscription
+  examples: |
+    - i wanna remove my course subscription, what should i do?
+    - I need hjelp removinging a course subscription
+    - can I remove a couse subscription?

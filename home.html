@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>BOT</title>
+      <img src="LOGO6.jpg"></img>
+   </head>
+   <body>
+    <script>!(function () {
+        sessionStorage.clear();
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+          // Replace 1.x.x with the version that you want
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                customData: { language: "en" },
+                initPayload: "/get_started",
+                socketUrl: "http://localhost:5005",
+                socketPath: "/socket.io/",
+                title: "GDBOT",
+                profileAvatar: "botAvatar_2.png",
+                openLauncherImage: 'botAvatar_2.png',
+                params: {storage: "session",}//clear conversation history  //closeLauncherImage: 'myCustomCloseImage.png',
+              },
+              null
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+      </script>
+    </body>
+</html>

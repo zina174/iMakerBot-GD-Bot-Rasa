@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: review
+  examples: |
+    - I'm happy with the service, can I submit a review?
+    - I'm happy with the service, what can I do to file a comment?
+    - I want to file a comment for a service, what can I do?

@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: check_cancellation_fee
+  examples: |
+    - help me see the discontinuation fees
+    - can u ask an agent about the discontinuation penalties?
+    - I want to see the discontinuation fee, what can I do?

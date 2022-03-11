@@ -1,0 +1,643 @@
+version: "2.0"
+
+intents:
+- English
+- French
+- Arabic
+- SERVICES
+- TRAINING
+- DEVELOPMENT
+- Networks
+- CHATBOTS
+- REFERENCES
+- CONTACT
+- BLOG
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- out_of_scope
+- newsletter_subscription_link
+- create_account_link
+- cancel_course_subscription
+- change_course
+- check_cancellation_fee
+- check_invoices
+- check_payment_methods
+- complaint
+- contact_customer_service
+- contact_human_agent
+- course_period
+- courses
+- create_account
+- delete_account
+- edit_account
+- General_About_You
+- General_Agent_Capabilities
+- General_Human_or_Bot
+- General_Negative_Feedback
+- General_Positive_Feedback
+- General_Security_Assurance
+- get_invoice
+- get_refund
+- newsletter_subscription
+- payment_issue
+- prepare_for_interview
+- recover_password
+- registration_problems
+- review
+- session_commencement
+- switch_account
+- skills_needed_for_employee
+- later
+- okay
+- get_started
+entities:
+- language
+- card  
+- company_specialisation
+- company_reference
+- communication_form
+- company_blog
+- network_setting
+- software_development
+- building_chatbot
+- courses
+slots:
+  rating:
+    type: unfeaturized
+    auto_fill: false
+  rating_quick:
+    type: unfeaturized
+    auto_fill: false
+  influence:
+    type: unfeaturized
+    auto_fill: false
+  support_feedback:
+    type: unfeaturized
+    auto_fill: false
+  complaint: 
+    type: unfeaturized
+    auto_fill: false 
+  support_positive_feedback:
+    type: unfeaturized
+    auto_fill: false
+    influence_conversation: false
+  support_complaint_feedback:
+    type: unfeaturized
+    auto_fill: false
+    influence_conversation: false
+  support_review_feedback:
+    type: unfeaturized
+    auto_fill: false
+    influence_conversation: false        
+actions:
+- action_session_start    
+- utter_greetfeedback
+- utter_menu
+- utter_thanks
+- utter_sorry
+- utter_awesome
+- utter_influence_done
+- utter_pre_finish
+- utter_finish
+- action_receive_ranking
+- action_respond_to_multilingual_question
+- action_translate_express_opinion
+- action_translate_msg_for_rating
+- utter_ask_for_rating
+- utter_express_opinion
+- utter_ask_rating
+- action_create_account_by_utter
+- action_newslettersubscription_to_page
+- utter_newsletter_subscription_french
+- utter_newsletter_subscription_arabic
+- action_respond_to_check_invoices
+- action_respond_to_prepare_for_interview
+- action_respond_to_skills_needed_for_employee
+- action_respond_to_general_About_You
+- action_respond_to_get_refund
+- action_respond_to_payment_issue
+- action_respond_to_change_course
+- action_respond_to_general_Positive_Feedback
+- action_respond_to_general_Negative_Feedback
+- action_respond_to_general_Security_Assurance
+- action_respond_to_get_invoice
+- action_respond_to_review
+- action_respond_to_complaint
+- utter_create_acount
+- action_newslettersubscription
+- action_create_account
+- action_respond_to_general_Agent_Capabilities
+- action_respond_to_Session_commencement
+- action_respond_to_contact_customer_service
+- action_respond_to_registration_problems
+- action_respond_to_switch_account
+- action_respond_to_contact_human_agent
+- action_respond_to_course_period
+- action_respond_to_general_Human_or_Bot
+- action_respond_to_delete_account
+- action_respond_to_edit_account
+- action_respond_to_recover_password
+- action_respond_to_check_cancellation_fee
+- action_respond_to_cancel_course_subscription
+- action_respond_to_out_of_scope
+- action_respond_to_fallback
+- action_customized_fallback
+- action_session_start
+- utter_language
+- utter_language_french
+- utter_language_arabic
+- utter_replay_main_french
+- utter_replay_main_arabic
+- utter_replay_main
+forms:
+- form_get_rating
+- form_get_rating_quick
+- form_get_influence
+- form_get_support_feedback
+- form_get_support_positive_feedback
+- form_get_support_complaint_feedback
+- form_get_support_review_feedback
+    
+responses:
+  utter_ask_for_rating:
+  - text: Because we aim always to improve our services we give you the opportunity to express your opinion, please assess your experience with us?
+  utter_ask_continue:
+  - text: do you want to continue?
+  utter_general_Agent_Capabilities:
+  - text: Hi, I am your customer service chatbot. You can ask me about your account, about courses, payment, anything you want to find about contacting us, and I’ll answer you. You can ask me about any subject related to our startup
+  utter_session_commencement:
+  - text: Exact date has not been decided yet, but we will send you the whole information about session commencement. Please look at our website to be updated
+  utter_newsletter_subscription:
+  - buttons:
+    - payload: newsletter_subscription_link
+      title: Newsletter subscription
+    text: Ok then, please register yourself in the following link at the bottom of the page. Hope I was helpful.
+  utter_newsletter_subscription_arabic:
+  - buttons:
+    - payload: newsletter_subscription_link
+      title: اشتراك الرسائل الإخبارية
+    text: حسنا ، يرجى تسجيل نفسك في الرابط التالي في أسفل الصفحة. آمل أن أكون مفيدة.
+  utter_newsletter_subscription_french:
+  - buttons:
+    - payload: newsletter_subscription_link
+      title: Inscription à la Newsletter
+    text: S’il vous plaît inscrivez-vous via le lien suivant au bas de la page. J’espère que j’ai été utile.
+  utter_registration_problems:
+  - text: We are sorry about this issue, please contact us on this number (+216)92009902/(+33)354865357 or send an email to contact@gdcollect-data.fr to resolve your problem 
+  utter_switch_account:
+  - text: To switch your profile you have to log out of your current account and sign in to your desired account, be aware that you have to continue your courses with the registration account
+  utter_contact_customer_service:
+  - text: You can contact customer service via phone:\n (+216)92009902/(+33)354865357  or via email:\n contact@gdcollect-data.fr
+  utter_contact_human_agent:
+  - text: It is possible to contact a human agent via phone:\n (+216)92009902/(+33)354865357\n or via email:\n contact@gdcollect-data.fr
+  utter_course_period:
+  - text: The course period has not been decided yet, but we will stay in touch with you via email as soon as we set the date. Please look at our website to be updated
+  utter_complaint:
+  - text: You can express your complaint here, please provide specific details about the cause of your unsatisfaction, by the end of this conversation we will give you the opportunity to evaluate our services
+  utter_review:
+  - text: You can express your opinion here, by the end of this conversation we will give you the opportunity to evaluate our services
+  utter_check_invoices:
+  - text: Check your email to find all your bills, we send them by email
+  utter_get_invoice:
+  - text: All bills are sent by email, check your email box or your spam
+  utter_general_Security_Assurance:
+  - text: We took all necessary precautions against fraud and attacks
+  utter_general_Negative_Feedback:
+  - text: I'm sorry about this impression, I'll try to imrpove myself, don't forget to leave your feedback by the end of this conversation
+  utter_general_Positive_Feedback:
+  - text: Thanks for your compliments, happy that I helped you
+  utter_general_Human_or_Bot:
+  - text: I'm a bot developped by Rasa
+  utter_delete_account:
+  - text: You can delete your account any time you want, you log in to your existing account and choose the option delete account
+  utter_edit_account:
+  - text: You can update your personal informations any time you want, you log in to your existing account and choose the option update account
+  utter_recover_password:
+  - text: If you forgot your password, click on the option forget password while logging to your account, we will send you an email to type a new password
+  utter_check_cancellation_fee:
+  - text: Once you have enrolled in a course you cannot make a cancellation, that's why there isn't a cancellation penalty because unbooking isn't possible
+  utter_cancel_course_subscription:
+  - text: You can't cancel your course subscription
+  utter_change_course:
+  - text: We are sorry you can't change a course by another one
+  utter_check_payment_methods:
+  - text: you can pay with bank cards like Mastercard, Visa, American Express, UnionPay, JCB, Maestro or ay using an eWallet like PayPal, Amazon Pay, Google Pay, Apple Pay, Yandex, Qiwi, Skrill or pay with money transfer
+  utter_payment_issue:
+  - text: Please send an email to contact@gdcollect-data.fr and clarify your payment issue we will check it and contact you as soon as possible
+  utter_get_refund:
+  - text: If a course is cancelled, all participants will get their money back, in other cases we don't pay a refund
+  utter_general_About_You:
+  - text: I'm iMaker Bot, a virtual assistant developed by Rasa, I can talk 3 languages(Arabic, French, English) and I'm here to answer your questions about GD-COLLECT-DATA startup
+  utter_skills_needed_for_employee:
+  - text: For a beginner role a degree usually adds some level of credibility, but if you have a good portfolio with good projects, it is usually an accepted substitute. We hope to see if you are comfortable with basic concepts in programming along with being able to write code. We are looking for developers with good skills in coding, should have good problem solving and analysis skills, should be good with stats and building testing and deploying models.
+  utter_prepare_for_interview:
+  - text: Usually the interview has a subset of these rounds==>Resume deep dive, algorithms and technical Concepts, Problem solving test, Coding, Behavioural, Sometimes, some of these rounds might be combined, for instance there might not be two separate rounds for coding and algorithms. Similarly there might be a single round for technical concepts and scenario based problem solving.
+  utter_create_acount:
+  - buttons:
+    - payload: create_account_link
+      title: Create account
+    text: Ok then, please click here to create your personal profile
+  utter_create_acount_fr:
+  - buttons:
+    - payload: create_account_link
+      title: Créer mon compte
+    text: Veuillez cliquer ici pour créer votre profil personnel
+  utter_create_acount_ar:
+  - buttons:
+    - payload: create_account_link
+      title: إنشاء حساب
+    text: حسنا ، يرجى النقر هنا لإنشاء الحساب الشخصي الخاص بك
+  utter_welcome_french_message:
+  - text: 👋 Bonjour, chèr(e) client(e)! Je suis le bot iMaker , votre assistant virtuel!Que puis-je faire pour vous?Plus votre question sera concise, meilleure sera ma réponse. Avant de commencer veuillez choisir votre langue
+  utter_welcome_arabic_message:
+  - text: مرحباً! أنا الروبوت سارة ، مساعدتك الافتراضية! ما الذي يمكنني أن أفعله من أجلك؟? كلما كان سؤالك أكثر إيجازاً ، كلما كان جوابي أفضل. قبل أن تبدأ ، من فضلك اختر لغتك👋
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
+  utter_welcome_message:
+  - text: 👋 Hey! I am iMaker Bot, your virtual assistant
+  utter_language:
+  - text: "Language switcher options"
+    buttons:
+    - title: "English"
+      payload: English
+    - title: "French"
+      payload: French
+    - title: "Arabic"
+      payload: Arabic  
+  utter_language_french:
+  - text: "Options de sélecteur de langue"    
+    buttons:
+    - title: "Anglais"
+      payload: Anglais
+    - title: Français
+      payload: francais
+    - title: "Arabe"
+      payload: Arabe    
+  utter_language_arabic:
+  - text: "خيارات محوّل اللغة"    
+    buttons:
+    - title: "الإنجليزية"
+      payload: الإنجليزية
+    - title: "الفرنسية"
+      payload: الفرنسية
+    - title: "العربية"
+      payload: العربية      
+  utter_main:
+  - text: "GDCollect-Data is a technological innovation company in software, managerial and organizational editions, which supports companies in their digital transformation."
+    buttons:
+    - title: Our Services
+      payload: Our Services
+    - title: References
+      payload: References
+    - title: "Blog "
+      payload: Blog
+    - title: Contact
+      payload: Contact  
+  utter_ourservices:
+  - text: "GDCOLLECT-DATA offers you the following services:"
+    buttons:
+    - title: "Online Training"
+      payload: Online Training 
+    - title: "Development"
+      payload: Development
+    - title: Networks
+      payload: Networks
+    - title: Chatbots
+      payload: Chatbots
+  utter_training:
+  - text:
+      Develop your skills and advance your career with GDCollectData Learning Management System
+
+
+      You can complete the subscription [form](https://www.gdcollect-data.fr/online-training/) or visit our website [GDATACADEMY](https://www.learn.gdcollect-data.fr/)
+  utter_development:
+  - text: >
+      We are a web & app development company that turns your ideas into a new driving force of your business.
+
+
+
+      If you want to know more about Software Development Tools , or you want to improve your Personal Development Skills, visit this link
+
+
+
+      [QUOTE REQUEST FORM](https://www.gdcollect-data.fr/devis/) 💰 
+
+
+      Please complete the form above, one of our advisers will contact you as soon as possible 😉📞     
+  utter_chatbots:
+  - text: >
+      Companies can opt for a custom Chatbot 🤖 development service and get the
+      software as they wish:
+
+         1️⃣ [DISCOVERY](https://www.gdcollect-data.fr/solution/)
+
+         2️⃣ [EXPERT](https://www.gdcollect-data.fr/solution/)
+
+         3️⃣ [ELITE](https://www.gdcollect-data.fr/solution/)
+  utter_networks:
+  - text: >
+      ⚙️ Network installation:
+
+        - Installation and maintenance of computer networks
+        - The various computer network installations
+        - IT network solution     
+  utter_blog:
+  - text: We invite you to consult our [Blog](https://www.gdcollect-data.fr/blog/) 📝
+  utter_contact:
+  - text: "Please contact us
+
+
+
+          Via Phone 📱 (+216)92009902/(+33)354865357 
+
+
+
+          Via Email 📧 contact@gdcollect-data.fr
+
+
+
+          Via our Website 📝 https://www.gdcollect-data.fr/contact/"
+  utter_references:
+  - text: All Information on our references is available [here](https://www.gdcollect-data.fr/references/)
+  utter_greet:
+  - text: "Hey! How are you?"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_did_that_help:
+  - text: "Did that help you?"
+  utter_happy:
+  - text: "Great, carry on!"
+  utter_goodbye:
+  - text: "Bye"
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_greetfeedback:
+  - text: "Now, We want your feedback ! I’m here to collect feedback on your latest experience with our service."
+  utter_menu:
+  - text: "Would like to spend a moment with me?"
+    buttons:
+    - title: "okay"
+      payload: okay
+    - title: "later"
+      payload: later
+  utter_ask_rating:
+  - text: "How was your experience with us?"
+    buttons:
+    - title: "⭐"
+      payload: "1"
+    - title: "⭐⭐"
+      payload: "2"
+    - title: "⭐⭐⭐"
+      payload: "3"
+    - title: "⭐⭐⭐⭐"
+      payload: "4"
+    - title: "⭐⭐⭐⭐⭐"
+      payload: "5"
+  utter_thanks:
+  - text: "Thanks"
+  utter_sorry:
+  - text: "Sorry to hear this"
+  utter_awesome:
+  - text: "Awesome!"
+  utter_ask_influence:
+  - text: "Sorry to hear this. \n\nCan you help me understand what influenced your rating?"
+  utter_influence_done:
+  - text: "Thanks for bringing this issue to our attention."
+  utter_ask_support_feedback:
+  - text: "Do you have any other feedback to share about our 24/7 support desk?"
+  utter_ask_rating_quick:
+  - text: "I understand. Can we do this real quick? Just choose the rating you would like to give, and we say goodbye."
+    buttons:
+    - title: "⭐"
+      payload: "1"
+    - title: "⭐⭐"
+      payload: "2"
+    - title: "⭐⭐⭐"
+      payload: "3"
+    - title: "⭐⭐⭐⭐"
+      payload: "4"
+    - title: "⭐⭐⭐⭐⭐"
+      payload: "5"
+  utter_pre_finish:
+  - text: "Thank you for your time with us."
+  utter_finish:
+  - text: "I’m sharing the information on your behalf with our team. Have a nice day!"
+  utter_main_French:
+  - text: "GDCollect-Data est une société d'innovation technologique en éditions logicielles, managériales et organisationnelles, qui accompagne les entreprises dans leur transformation digitale ."
+    buttons:
+    - title: Découvrez Nos Services 
+      payload: découvrez nos services 
+    - title: Nos Références
+      payload: Nos Références
+    - title: Blog d'entreprise
+      payload: Blog d'entreprise
+    - title: Contactez-nous
+      payload: contactez-nous
+  utter_ourservices_French:
+  - text: "GDCOLLECT-DATA vous propose les services suivants : "
+    buttons:
+    - title: "Formation en ligne"
+      payload: Formation en Ligne 
+    - title: "Développement"
+      payload: Développement
+    - title: Réseaux
+      payload: Réseaux
+    - title: Agents Conversationnels
+      payload: Agents Conversationnels
+  utter_training_French:
+  - text:
+      Développez vos compétences et faites progresser votre carrière avec GDColectData Learning Management System
+      
+
+      Vous pouvez compléter ​le [formulaire](https://www.gdcollect-data.fr/online-training/) de demande d'abonnement ou visitez notre Site Web [GDATACADEMY](https://www.learn.gdcollect-data.fr/)
+  utter_development_French:
+  - text: >
+      Nous sommes une société de développement Web et d'applications qui transforme vos idées en une nouvelle force motrice de votre entreprise.
+
+
+
+      Si vous souhaitez en savoir plus sur les outils de développement logiciels ou si vous souhaitez améliorer vos compétences en développement personnel, visitez ce lien
+
+
+      
+      [FORMULAIRE DE DEMANDE DE DEVIS](https://www.gdcollect-data.fr/devis/) 💰 
+
+
+      Veuillez remplir le formulaire ci-dessus, l’un de nos conseillers vous contactera dans les plus brefs délais 😉📞    
+  utter_chatbots_French:
+  - text: >
+      Les entreprises peuvent opter pour un service de développement de Chatbot
+      🤖 personnalisé et obtenir le logiciel selon leur désir :
+
+         1️⃣ [DECOUVERTE](https://www.gdcollect-data.fr/solution/)
+
+         2️⃣ [EXPERT](https://www.gdcollect-data.fr/solution/)
+
+         3️⃣ [ELITE](https://www.gdcollect-data.fr/solution/)
+  utter_networks_French:
+  - text: >
+      ⚙️ Installation Réseaux :
+       - Installation et maintenance réseaux informatiques
+       - Les différentes installation Réseau informatique
+       - Solution réseaux informatique
+  utter_blog_French:
+  - text: Nous vous invitons à consulter notre [Blog](https://www.gdcollect-data.fr/blog/) 📝
+  utter_contact_French:
+  - text: "Veuillez nous contacter 
+
+
+
+          Par Téléphone📱 (+216)92009902/(+33)354865357 
+
+
+
+          Par Mail 📧 contact@gdcollect-data.fr 
+
+
+
+          Via le Site Web 📝 https://www.gdcollect-data.fr/contact/"  
+  utter_references_French:
+  - text: Les informations sur nos références sont disponibles [ici](https://www.gdcollect-data.fr/references/)
+  utter_main_Arabic:
+  - text: " شركتنا هي شركة ابتكار تكنولوجي في البرامج والإصدارات الإدارية والتنظيمية ، والتي تدعم الشركات في تحولها الرقمي"
+    buttons:
+    - title: خدماتنا
+      payload: خدماتنا
+    - title: مراجعنا
+      payload: مراجعنا
+    - title: مدونتنا
+      payload: مدونتنا
+    - title: تواصل معنا
+      payload: تواصل معنا
+  utter_ourservices_Arabic:
+  - text: ": هذه أهم الخدمات المتوفرة لدينا"
+    buttons:
+    - title: " دورات تدريبية على الإنترنت "
+      payload: دورات تدريبية على الإنترنت
+    - title: تطوير تطبيقات الويب والهواتف الذكية
+      payload: تطوير تطبيقات الويب والهواتف الذكية
+    - title: تركيب الشبكات
+      payload: تركيب الشبكات
+    - title: روبوتات ذكية للدردشة
+      payload: روبوت دردشة
+  utter_training_Arabic:
+  - text: >
+       طور مهاراتك وحقق تقدمًا في حياتك المهنية معنا باستخدام نظام إدارة التعلم
+      
+
+       يمكنك إكمال [النموذج] (https://www.gdcollect-data.fr/online-training/)
+
+
+       [GDATACADEMY](https://www.learn.gdcollect-data.fr/) أو زيارة موقعنا على الويب
+  utter_development_Arabic:
+  - text: >
+       نحن شركة تطوير الويب والتطبيقات التي تحول أفكارك إلى قوة دافعة جديدة لعملك
+
+
+
+       إذا كنت تريد معرفة المزيد عن أدوات تطوير البرامج ، أو إذا كنت ترغب في تحسين مهارات التنمية الشخصية لديك ، فتفضل بزيارة هذا الرابط   
+
+
+
+       [استمارة طلب عرض أسعار](https://www.gdcollect-data.fr/devis/)💰
+
+
+       يرجى إكمال النموذج أعلاه وسيتصل بك📞 أحد مستشارينا في أقرب وقت ممكن      
+  utter_chatbots_Arabic:
+  - text: >
+        يمكن للشركات اختيار خدمة تطويرالدردشة المخصصة والحصول على البرنامج حسب رغبتهم
+        
+
+        [برنامج الاكتشاف](https://www.gdcollect-data.fr/solution/) - 
+
+
+        [برنامج الخبراء ](https://www.gdcollect-data.fr/solution/) - 
+        
+
+        [برنامج النخبة](https://www.gdcollect-data.fr/solution/) - 
+  utter_networks_Arabic:
+  - text: >
+         : تركيب الشبكات ⚙️
+
+
+         تركيب وصيانة شبكات الحاسوب - 
+
+
+         التركيبات المختلفة لشبكات الحاسوب - 
+       
+
+         حل شبكة تكنولوجيا المعلومات - 
+  utter_blog_Arabic:
+  - text: ندعوك لزيارة [مدونتنا](https://www.gdcollect-data.fr/blog/) 📝 
+  utter_contact_Arabic:
+  - text:   يرجى الاتصال بنا
+    
+    
+
+           عبر الهاتف 📱
+           
+           
+           (+216)92009902/ (+33)354865357
+
+
+
+           عبر البريد الإلكتروني 📧 
+
+
+           contact@gdcollect-data.fr  
+           
+           
+           أو عبر موقعنا 📝
+
+
+            https://www.gdcollect-data.fr/contact/ 
+  utter_references_Arabic:
+  - text:  جميع المعلومات عن مراجعنا متوفرة
+      [هنا](https://www.gdcollect-data.fr/references/)
+  utter_express_opinion:
+  - text: "please provide more details here"
+  utter_replay_main:
+  - text: "Let's Try Something else"
+    buttons:
+    - title: Our Services
+      payload: Our Services
+    - title: References
+      payload: References
+    - title: "Blog "
+      payload: Blog
+    - title: Contact
+      payload: Contact  
+  utter_replay_main_french:
+  - text: "Essayons autre chose"
+    buttons:
+    - title: Découvrez Nos Services 
+      payload: découvrez nos services 
+    - title: Nos Références
+      payload: Nos Références
+    - title: Blog d'entreprise 
+      payload: blog d'entreprise
+    - title: Contactez-nous
+      payload: contactez-nous
+  utter_replay_main_arabic:
+  - text: "لنجرب شيئًا آخر"
+    buttons:
+    - title: خدماتنا
+      payload: خدمات
+    - title: مراجعنا
+      payload: مراجعنا
+    - title: مدونتنا
+      payload: مدونتنا
+    - title: تواصل معنا
+      payload: تواصل معنا         
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

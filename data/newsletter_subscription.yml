@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: newsletter_subscription
+  examples: |
+    - can you ask an agent if there's a newsletter i can receive?
+    - how can I receive the newsletter?
+    - can you tell me how I can receive the fucking newsletter?

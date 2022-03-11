@@ -1,0 +1,50 @@
+# This file contains the different endpoints your bot can use.
+
+# Server where the models are pulled from.
+# https://rasa.com/docs/rasa/model-storage#fetching-models-from-a-server
+
+#models:
+#  url: http://my-server.com/models/default_core@latest
+#  wait_time_between_pulls:  10   # [optional](default: 100)
+
+# Server which runs your custom actions.
+# https://rasa.com/docs/rasa/custom-actions
+
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+  # url: " http://rasa-actions-server/webhook"
+
+
+# Tracker store which is used to store the conversations.
+# By default the conversations are stored in memory.
+# https://rasa.com/docs/rasa/tracker-stores
+
+
+tracker_store:
+   type: SQL
+   dialect: "postgresql"  # the dialect used to interact with the db
+   url: "postgres://onjezbdwpdhvme:8f6824ad5499413e79d856358ce5e0d89716bb1a3d6801cbaea2d3e3c73a3388@ec2-3-230-238-86.compute-1.amazonaws.com:5432/defbibmqrj7c1m"  # (optional) host of the sql db, e.g. "localhost"
+   db: "defbibmqrj7c1m"  # path to your db
+   port: 5432
+   username: "onjezbdwpdhvme"  # username used for authentication
+   password: "8f6824ad5499413e79d856358ce5e0d89716bb1a3d6801cbaea2d3e3c73a3388"  # password used for authentication
+   # query: # optional dictionary to be added as a query string to the connection URL
+   #   driver: my-driver
+
+# rest of connection code using the connection string `uri
+# tracker_store:
+#    type: SQL
+#    dialect: "postgresql"
+#    url: "localhost"
+#    db: "rasa"
+#    username: "postgres"
+#    password: "root"
+
+# Event broker which all conversation events should be streamed to.
+# https://rasa.com/docs/rasa/event-brokers
+
+#event_broker:
+#  url: localhost
+#  username: username
+#  password: password
+#  queue: queue

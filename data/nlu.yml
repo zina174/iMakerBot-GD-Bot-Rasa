@@ -1,0 +1,267 @@
+version: "2.0"
+
+nlu:
+- intent: English
+  examples: |
+    - English
+    - British
+    - Anglais
+    - الإنجليزية
+    
+- intent: French
+  examples: |
+    - French
+    - francais 
+    - الفرنسية
+    - Français
+
+- intent: Arabic
+  examples: |
+    - العربية 
+    - عربي  
+    - Arabe
+    - Arabic
+    
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - Hello Agent
+    - Greetings
+    - Good to see you
+    - Good morning
+    - Good evening
+    - Good day
+    - Looking good eve
+    - How r u?
+    - How is it going?
+    - How have you been?
+    - How are things going?
+    - You there
+    - Who is this?
+    - What's up?
+    - What's new?
+    - Ok take me back
+    - How are you today?
+    - Hi there
+    - Hi advisor
+    - Hey you
+    - Hey twin
+    - Hey there
+    - Hey there all
+    - Hey how are you doing
+    - Hello
+    - Hello I am looking for some help here
+    - Have you been well?
+    - Hi
+    - How are you
+    - Is anyone there?
+    - Whats up
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Ok goodbye
+    - See you later
+    - See you
+    - Stop talking to me
+    - Go away
+    - Go off
+    - Bye bye
+    - Bye now
+    - Catch you later
+    - Cya later
+    - End trial
+    - Ending this session
+    - Finished now, good bye
+    - Get lost
+    - Going now
+    - Good. bye.
+    - Goodbye
+    - Have a nice day?
+    - Hey bot go away
+    - I am leaving
+    - I am out of here
+    - I d like to stop doing this
+    - I have got to go
+    - I want to quit
+    - I'm done
+    - Im done
+    - I'm leaving now    
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: okay
+  examples: |
+    - okay
+    - long feedback
+    - start feedback
+    - give feedback
+    - begin feedback
+- intent: later
+  examples: |
+    - later
+    - short feedback 
+
+
+- intent: newsletter_subscription_link
+  examples: |
+    - newsletter_subscription_link
+    - link newsletter_subscription_link
+    - newsletter_subscription_link link
+    - link to newsletter_subscription_link
+    - newsletter_subscription_link link please
+- intent: create_account_link
+  examples: |
+    - create_account_link
+    - link create_account_link
+    - create_account_link link
+    - link to create_account_link
+    - create_account_link link please    
+
+
+
+- synonym: company_specialisation
+  examples: |
+      - specialty
+      - competence
+      - expertise
+      - service
+      - information
+      - qualifications
+      - introduce yourself
+      - introduce you
+      - describe yourself
+      - activities
+      - company purpose
+
+- synonym: software_development
+  examples: |
+      - development process
+      - programming languages
+      - programming
+      - programming skills
+      - coding
+      - development mobile
+      - python
+      - java
+      - html
+      - android
+      - coding skills
+      - development career
+
+- synonym: building_chatbot
+  examples: |
+      - bot
+      - bots
+      - chat bot 
+      - chatbot
+      - Agents Conversationnels
+      - Agent
+      - talkbot
+      - interactive agent
+
+- synonym: courses
+  examples: |
+      - online class
+      - online learning
+      - e-learning
+      - course
+      - training course
+      - online educational
+      - online school
+      - e-Learning courses
+      - e learning
+      - online certification course
+    
+- synonym: network_setting
+  examples: |
+      - computer network
+      - network
+      - networks
+      - computer maintenance and networking
+      - networking
+      - maintenance
+      - network installation
+      - network install
+
+- synonym: company_reference
+  examples: |
+      - reference
+      - refer
+
+- synonym: communication_form
+  examples: |
+      - address
+      - mobile number
+      - phone number
+      - mail
+      - email
+      - contact
+      - contacting
+      - contact form

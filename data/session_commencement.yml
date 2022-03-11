@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: session_commencement
+  examples: |
+    - when perhaps will the lovely new term start?;
+    - when... will the upcoming new term start?;
+    - when later will the new legal term start?

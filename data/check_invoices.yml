@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: check_invoices
+  examples: |
+    - I can't find my bill, can I check it?
+    - I can't find my bills, how can I check them?
+    - i want to inspect my bill, can u help me?

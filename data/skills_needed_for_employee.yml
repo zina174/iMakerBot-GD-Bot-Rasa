@@ -1,0 +1,7 @@
+version: "2.0"
+nlu:
+- intent: skills_needed_for_employee
+  examples: |
+    - * what skills and particular qualities do do you look for in an intern?;
+    - what skills and qualities far do you look quickly for best in an intern?;
+    - what skills and leadership qualities do you folks look for in supporting an intern?
