@@ -348,8 +348,8 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	
 	
 
-![engl bot](https://user-images.githubusercontent.com/75736640/158146133-94db46b3-9b6d-4e84-9641-b1497535e6cd.PNG)
-	
+![angl bot](https://user-images.githubusercontent.com/75736640/158150011-f98b977d-b38b-45ac-ac39-167120da3bbd.PNG)
+
 	
 	*************************************************************************************************************************************************************************
 	
@@ -357,9 +357,10 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	
 	
 	
-![fr bot](https://user-images.githubusercontent.com/75736640/158147161-1407eeb0-47e3-4bbe-bb14-46bc6d303a02.PNG)
 
-	
+
+![Frr bot](https://user-images.githubusercontent.com/75736640/158150060-68cd89ad-6816-4025-a1d0-5a8176fbc2d5.PNG)
+
 	
 	*************************************************************************************************************************************************************************
 	
@@ -368,8 +369,9 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	
 	
 	
-![ar bot](https://user-images.githubusercontent.com/75736640/158146817-8c489a54-fdd8-4adf-bfce-e278704e59a8.PNG)
-	
+
+![Bot arabic](https://user-images.githubusercontent.com/75736640/158150175-f341b0e2-b9c1-47c2-a63e-107a0e337aba.PNG)
+
 	
 	*****************************************************************************************************************************************************************************
 	
