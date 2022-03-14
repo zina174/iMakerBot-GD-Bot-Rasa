@@ -340,4 +340,32 @@ Get the release name
 Finally, upgrade: 
 
 Note: make sure to execute this command in the directory where values.yml is located
+	
+	*************************************************************************************************************************************************************************
+	
+	Workflow English version Bot : description :  a sequence of operations in a workplace :  flows of conversations user +chatbot in english
+	
+	
+![engl bot](https://user-images.githubusercontent.com/75736640/158127857-79adc70d-e2dd-45fa-af57-3f5114ed3ef3.PNG)
+	
+	***********************************************************************************************************************************************************************
 
+	Workflow Fresnch version Bot : description :  a sequence of operations in a workplace :  flows of conversations user +chatbot in Frensch
+	
+	![fr bot](https://user-images.githubusercontent.com/75736640/158128133-7b291369-6314-44fa-a732-160148c5ccb1.PNG)
+	
+	
+	***********************************************************************************************************************************************************************
+	Workflow Fresnch version Bot : description :  a sequence of operations in a workplace :  flows of conversations user +chatbot in Arabic 
+	
+	
+	![ar bot](https://user-images.githubusercontent.com/75736640/158128378-f00cb211-e451-4aad-9aea-e09fe2c0f2ea.PNG)
+	
+	********************************************************************************************************************************************************************************
+
+	
+	
+
+	
+	
+	
