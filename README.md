@@ -341,3 +341,27 @@ Finally, upgrade:
 
 Note: make sure to execute this command in the directory where values.yml is located
 
+	
+	************************************************************************************************************************************************************************
+	
+	English workflow : a sequence of conversation user + bot in English
+	
+	
+![engl bot](https://user-images.githubusercontent.com/75736640/158129542-aeca36e5-9da0-4468-9e4b-b8c03ff5bfcc.PNG)
+	
+	**********************************************************************************************************************************************************************
+	
+	Frensch worflow : a sequence of conversation user+ bot in Frensch 
+	
+	![fr bot](https://user-images.githubusercontent.com/75736640/158129761-4e70f527-c57e-416f-bf78-470a08512f7f.PNG)
+	
+	************************************************************************************************************************************************************************
+	
+	Arabic workflow: a sequence of conversation user+ bot in Arabic 
+	
+	
+	![ar bot](https://user-images.githubusercontent.com/75736640/158130103-66c66279-e843-4901-af0d-7ad360a97b0b.PNG)
+
+	************************************************************************************************************************************************************************
+
+	
