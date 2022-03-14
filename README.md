@@ -340,4 +340,35 @@ Get the release name
 Finally, upgrade: 
 
 Note: make sure to execute this command in the directory where values.yml is located
+	
+	
+	
+	*************************************************************************************************************************************************************************
+	  English Workflow : designing workflow of conversations in english user+gdBot
+	
+	
 
+![engl bot](https://user-images.githubusercontent.com/75736640/158146133-94db46b3-9b6d-4e84-9641-b1497535e6cd.PNG)
+	
+	
+	*************************************************************************************************************************************************************************
+	
+	Frensch workflow : designing workflow of conversations in frensch user+gdBot
+	
+	
+	![fr bot](https://user-images.githubusercontent.com/75736640/158146473-a9de46e1-1cb5-4512-bb63-73da3b53a135.PNG)
+	
+	*************************************************************************************************************************************************************************
+	
+	
+	Arabic workflow : designing workflow of conversations in arabic user+gdBot
+	
+	
+	
+![ar bot](https://user-images.githubusercontent.com/75736640/158146817-8c489a54-fdd8-4adf-bfce-e278704e59a8.PNG)
+	
+	
+	*****************************************************************************************************************************************************************************
+	
+
+	
