@@ -356,7 +356,10 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	Frensch workflow : designing workflow of conversations in frensch user+gdBot
 	
 	
-	![fr bot](https://user-images.githubusercontent.com/75736640/158146473-a9de46e1-1cb5-4512-bb63-73da3b53a135.PNG)
+	
+![fr bot](https://user-images.githubusercontent.com/75736640/158147161-1407eeb0-47e3-4bbe-bb14-46bc6d303a02.PNG)
+
+	
 	
 	*************************************************************************************************************************************************************************
 	
