@@ -348,9 +348,9 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	
 	
 
-![angl bot](https://user-images.githubusercontent.com/75736640/158150011-f98b977d-b38b-45ac-ac39-167120da3bbd.PNG)
 
-	
+![Bot 7898 english](https://user-images.githubusercontent.com/75736640/158644011-3d31d0e0-58f6-4ee7-a150-4f70aad1e151.PNG)
+
 	*************************************************************************************************************************************************************************
 	
 	Frensch workflow : designing workflow of conversations in frensch user+gdBot
@@ -358,8 +358,7 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	
 	
 
-
-![Frr bot](https://user-images.githubusercontent.com/75736640/158150060-68cd89ad-6816-4025-a1d0-5a8176fbc2d5.PNG)
+![Bot 7898 francais](https://user-images.githubusercontent.com/75736640/158644047-57d49176-a115-482c-b521-46c213289197.PNG)
 
 	
 	*************************************************************************************************************************************************************************
@@ -369,8 +368,7 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	
 	
 	
-
-![Bot arabic](https://user-images.githubusercontent.com/75736640/158150175-f341b0e2-b9c1-47c2-a63e-107a0e337aba.PNG)
+![Bot 7898 arabic](https://user-images.githubusercontent.com/75736640/158644098-b69617f0-cad5-41cd-9828-998159887232.PNG)
 
 	
 	****************************************************************************************************************************************************************************
