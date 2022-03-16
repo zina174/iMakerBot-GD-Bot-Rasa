@@ -20,14 +20,15 @@ action_endpoint:
 # https://rasa.com/docs/rasa/tracker-stores
 
 
-tracker_store:
-   type: SQL
-   dialect: "postgresql"  # the dialect used to interact with the db
-   url: "postgres://ebuyfwtjfariof:a84381b57bae65fa124ac30a46ffc3a0a6ebe3df20ecbd55d0f401a9184bd081@ec2-54-85-113-73.compute-1.amazonaws.com:5432/ddgdp2ic36ccds"  # (optional) host of the sql db, e.g. "localhost"
-   db: "ddgdp2ic36ccds"  # path to your db
-   port: 5432
-   username: "ddgdp2ic36ccds"  # username used for authentication
-   password: "a84381b57bae65fa124ac30a46ffc3a0a6ebe3df20ecbd55d0f401a9184bd081"  # password used for authentication
+# tracker_store:
+#    type: SQL
+#   #  dialect: "postgresql"  # the dialect used to interact with the db
+#    url: "postgresql://mohamed:2jpHY6fwf10EkpaiNHJHaA@free-tier7.aws-eu-west-1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full&options=--cluster%3Dsound-cougar-1899"  # (optional) host of the sql db, e.g. "localhost"
+#   #  url: "cockroach://mohamed:2jpHY6fwf10EkpaiNHJHaA@free-tier7.aws-eu-west-1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full&options=--cluster%3Dsound-cougar-1899"
+#    db: "sound-cougar-1899.defaultdb"  # path to your db
+#    port: 26257
+#    username: "mohamed"  # username used for authentication
+#    password: "2jpHY6fwf10EkpaiNHJHaA"  # password used for authentication
 
 # rest of connection code using the connection string `uri
 # tracker_store:
