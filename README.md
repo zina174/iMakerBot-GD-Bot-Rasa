@@ -349,7 +349,13 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	
 
 
-![Bot 7898 english](https://user-images.githubusercontent.com/75736640/158644011-3d31d0e0-58f6-4ee7-a150-4f70aad1e151.PNG)
+
+	
+![bot english](https://user-images.githubusercontent.com/75736640/158767945-31ea1fda-4ce1-4453-b4b1-1b183cc3aa4d.PNG)
+
+
+[Bot english workflow 7898.pdf](https://github.com/zina174/iMakerBot-GD-Bot-Rasa/files/8282674/Bot.english.workflow.7898.pdf)
+
 
 	*************************************************************************************************************************************************************************
 	
@@ -358,9 +364,16 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	
 	
 
-![Bot 7898 francais](https://user-images.githubusercontent.com/75736640/158644047-57d49176-a115-482c-b521-46c213289197.PNG)
+
+![bot french](https://user-images.githubusercontent.com/75736640/158768024-fc928024-4ada-4004-8aa4-c930b6254bc7.PNG)
+	
+[Bot french workflow 7898.pdf](https://github.com/zina174/iMakerBot-GD-Bot-Rasa/files/8282952/Bot.french.workflow.7898.pdf)
+
 
 	
+
+
+
 	*************************************************************************************************************************************************************************
 	
 	
@@ -369,9 +382,13 @@ Note: make sure to execute this command in the directory where values.yml is loc
 	
 	
 ![Bot 7898 arabic](https://user-images.githubusercontent.com/75736640/158644098-b69617f0-cad5-41cd-9828-998159887232.PNG)
+	
+	
+
+[Bot 7898 Arabiya workflow.pdf](https://github.com/zina174/iMakerBot-GD-Bot-Rasa/files/8282958/Bot.7898.Arabiya.workflow.pdf)
 
 	
-	****************************************************************************************************************************************************************************
+	***********************************************************************************************************************************************************************
 	
 
 	
