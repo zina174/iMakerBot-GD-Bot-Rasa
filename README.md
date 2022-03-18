@@ -506,6 +506,8 @@ Designing conversations user+ GD BOT in frensh
 ## Arabic workflow
 Designing conversations user+ GD BOT in arabic
 
+[GD BOT ARABIC.pdf](https://github.com/gdcollectdata/iMakerBot-GD-Bot-Rasa/files/8306410/GD.BOT.ARABIC.pdf)
+
 
 ***********************************************************************************************************************************************************************
 
