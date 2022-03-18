@@ -1442,13 +1442,13 @@ class Translation_multilingual_question(Action):
         
         if (where == 'en' and intent== 'SERVICES'):
                dispatcher.utter_message(template='utter_ourservices')
-               dispatcher.utter_message(template='utter_replay_main')    
+            #    dispatcher.utter_message(template='utter_replay_ourservices')    
         elif (where == 'fr' and intent== 'SERVICES'):  
                 dispatcher.utter_message(template='utter_ourservices_French') 
-                dispatcher.utter_message(template='utter_replay_main_french')   
+                # dispatcher.utter_message(template='utter_replay_main_french')   
         elif (where == 'ar' and intent== 'SERVICES'):  
                 dispatcher.utter_message(template='utter_ourservices_Arabic')
-                dispatcher.utter_message(template='utter_replay_main_arabic')                   
+                # dispatcher.utter_message(template='utter_replay_main_arabic')                   
 
         elif (where == 'en' and intent== 'DEVELOPMENT'):
                dispatcher.utter_message(template='utter_development')

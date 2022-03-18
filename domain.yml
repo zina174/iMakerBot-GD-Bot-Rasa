@@ -153,6 +153,7 @@ actions:
 - utter_replay_main_french
 - utter_replay_main_arabic
 - utter_replay_main
+# - utter_replay_ourservices
 forms:
 - form_get_rating
 - form_get_rating_quick
@@ -637,7 +638,21 @@ responses:
     - title: مدونتنا
       payload: مدونتنا
     - title: تواصل معنا
-      payload: تواصل معنا         
+      payload: تواصل معنا  
+
+  # utter_replay_ourservices:
+  # - text: ""
+  #   buttons:
+  #   - title: "Online Training"
+  #     payload: Online Training 
+  #   - title: "Development"
+  #     payload: Development
+  #   - title: Networks
+  #     payload: Networks
+  #   - title: Chatbots
+  #     payload: Chatbots       
+
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
