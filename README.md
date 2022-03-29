@@ -510,7 +510,115 @@ Designing conversations user+ GD BOT in arabic
 
 
 ***********************************************************************************************************************************************************************
+	
+	
+	
+	*********Rasa integration in a wordrpress website*********
+	
+	
+	
+Step 1 : Login wordpress
+	
+![c1](https://user-images.githubusercontent.com/75736640/160583836-9f78a6cc-3884-46c7-9d25-5db53cc83967.PNG)
 
+	
+	Step 2 : downloading XAMPP / Start APCHE and mysql
+
+![c2](https://user-images.githubusercontent.com/75736640/160583887-d8c6d079-9c3f-4ac1-aeed-1738c2cc4c3f.PNG)
+	
+
+![c3](https://user-images.githubusercontent.com/75736640/160584440-bb936481-c2cc-43e3-afd1-f9f4d512fb20.PNG)
+
+	
+	Step 3 : in the file ini line we add line 29 like below
+	
+
+![c4](https://user-images.githubusercontent.com/75736640/160584686-3255485b-c8ee-4042-9762-18d9c0ecefee.PNG)
+	
+	Step 4 : adding a new database
+	
+	
+![c5](https://user-images.githubusercontent.com/75736640/160584836-64281c89-21dd-4b46-870d-98321934cb65.PNG)
+ 
+	
+	Step 5: Configuring wordpress
+	
+
+![c6](https://user-images.githubusercontent.com/75736640/160584955-f9fe6801-588c-4143-bec7-fa6697233209.PNG)
+
+	
+	Step 6: Launching wordpress dashboard
+	
+
+![c7](https://user-images.githubusercontent.com/75736640/160585089-dec9667a-dfd8-443e-a54e-83b3faad9730.PNG)
+
+	
+	
+	Step 7: Wordpress --> Plugins ---> Add new 
+
+![c8](https://user-images.githubusercontent.com/75736640/160585327-763e4c65-d6e2-4e73-954f-91ba4cc1621f.PNG)
+	
+	
+	Step 8 : in Search field : insert headers and footers 
+	
+![c9](https://user-images.githubusercontent.com/75736640/160585494-53ed9e23-5800-4503-b684-bc09648c489a.PNG)
+	
+
+	Step 9 : Settings --> insert headers and footers
+	
+![c10](https://user-images.githubusercontent.com/75736640/160585854-2978cebb-9f1c-474e-8280-532dedf4dbc4.PNG)
+	
+	Step 10 : Go to credentail.yml and write 
+
+
+![c11](https://user-images.githubusercontent.com/75736640/160586101-1848a4da-f104-4df2-872e-431f69a73191.PNG)
+	
+	
+	Step 11: Go to endpoints and write 
+	
+
+
+![c12](https://user-images.githubusercontent.com/75736640/160586269-6ddf1671-5663-49e8-94c0-ac92853141c7.PNG)
+
+
+
+![c13](https://user-images.githubusercontent.com/75736640/160586789-426064c9-a668-49a8-a63d-80d7a55baa76.PNG)
+
+	
+	Step 12: go to terminal vs code --> rasa run 
+	
+
+
+![c14](https://user-images.githubusercontent.com/75736640/160587041-63aa2353-c19b-4fde-bf4a-39a9e5547c32.PNG)
+	
+	
+	Step 13 : ngrok terminal
+	
+
+
+![c15](https://user-images.githubusercontent.com/75736640/160587218-7c45d7de-3d23-4259-bb0e-a6c833ec15fd.PNG)
+	
+	
+	Step 14: copy the link provided and go paste in in sockUrl in home.html
+	
+
+![home bot](https://user-images.githubusercontent.com/75736640/160596636-8a80f423-ae5f-4d9f-ab70-7ce7fb56f934.PNG)
+
+	
+         Step 15 : copy the script and paste it in wordpress body
+	
+
+![home academy](https://user-images.githubusercontent.com/75736640/160592632-d26f2de0-636a-4d14-9618-1fd33d8061f2.PNG)
+
+
+![c16](https://user-images.githubusercontent.com/75736640/160587466-b375fb2a-1e92-42a7-bad8-6cc39932260f.PNG)
+
+	
+	Step 16 : go to your page wordpress 
+	
+
+
+![botty](https://user-images.githubusercontent.com/75736640/160596523-0d0c89e3-70b5-4c18-89c3-3d47437b8a78.PNG)
 
 
 
